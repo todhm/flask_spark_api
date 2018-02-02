@@ -1,4 +1,4 @@
-#Creating flask api with spark app created by scala.
+# Creating flask api with spark app created by scala.
 ---
 In this project simple flask api which retrieve most called dropped from tdr.csv data stored in Hadoop Distributed File System (HDFS).
 cdr.csv consists of columns.
