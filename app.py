@@ -7,7 +7,7 @@ app = Flask(__name__)
 def get_top10():
     master = "local[*]"
     spark_class = "RoamingApp"
-    project_path = "/home/edureka/project/roamingproject/target/scala-2.10/roamingproject_2.10-1.0.jar"
+    project_path = "./target/scala-2.10/roamingproject_2.10-1.0.jar"
     spark_submit = "spark-submit --master %s --class %s %s"
     result = subprocess.check_output(spark_submit % (master,spark_class,project_path),shell=True)
     #result = subprocess.check_output("hdfs dfs -ls",shell=True)
